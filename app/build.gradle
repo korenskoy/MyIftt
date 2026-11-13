@@ -1,0 +1,28 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'dev.myiftt.forwarder'
+    compileSdk 37
+
+    defaultConfig {
+        applicationId 'dev.myiftt.forwarder'
+        minSdk 26
+        targetSdk 37
+        versionCode 3
+        versionName '0.2.1'
+        testInstrumentationRunner 'dev.myiftt.forwarder.SetupInstrumentation'
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
